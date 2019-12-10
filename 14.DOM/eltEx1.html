@@ -1,0 +1,62 @@
+<!-- <blockquote id='quote'>
+    No book can ever be finished. While working on it we learn
+     just enough to find it immature the moment we turn away from it.
+</blockquote>
+<script>
+    function elt(type,...children){
+        let node = document.createElement(type)
+        for(let child of children){
+            if(typeof child !== 'string') node.appendChild(child)
+            else node.appendChild(document.createTextNode(child))
+        }
+        return node
+    }
+    
+    document.getElementById('quote').appendChild(
+    elt('footer','--',
+        elt('strong','Karl Popper'),
+        ', preface to the second editon of ',
+        elt('em','The Open Society and Its Enemies'),
+        ',1950') )  
+    </script> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Event Propagation</title>
+
+<style>
+#t-daddy { border: 1px solid red }
+#c1 { background-color: pink; }
+</style>
+
+<script>
+function stopEvent(ev) {
+  c2 = document.getElementById("c2");
+  c2.innerHTML = "hello";
+
+  // this ought to keep t-daddy from getting the click.
+  ev.stopPropagation();
+  alert("event propagation halted.");
+}
+
+function load() {
+  elem = document.getElementById("tbl1");
+  elem.addEventListener("click", stopEvent, false);
+}
+</script>
+</head>
+
+<body onload="load();">
+
+<table id="t-daddy" onclick="alert('hi');">
+  <tr id="tbl1">
+    <td id="c1">one</td>
+  </tr>
+  <tr>
+    <td id="c2">two</td>
+  </tr>
+</table>
+
+</body>
+</html> -->
+

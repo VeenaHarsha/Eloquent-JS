@@ -1,0 +1,34 @@
+<!-- <p style="border:3px solid red">
+    I'm Boxed in
+</p>
+This text is displayed <strong>inline</strong>,
+<strong style="display:block">as a block</strong>, and 
+<strong style="display: none"> not at all</strong>.
+<script>
+    let para = document.body.getElementByTagName("p")[0];
+    console.log("ClientHeight:",para.clientHeight)
+    console.log("OffsetHeight:",para.offsetHeight )
+</script> -->
+<!-- 
+<p>My ostrich Gertrude:</p>
+<p><img id="gertrude" src="./images/flower1.jpg"></p>
+
+<script>
+  let ostrich = document.getElementById("gertrude");
+  console.log(ostrich.src);
+</script> -->
+<html>
+  <head>
+    <script>
+       // run this function when the document is loaded
+       window.onload = function(){
+         const header = document.createElement("h1")
+         const text_header = document.createTextNode("HEADER")
+         header.appendChild(text_header)
+         document.body.appendChild(header)
+       }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
