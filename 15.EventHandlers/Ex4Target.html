@@ -1,0 +1,11 @@
+<button> Apple </button>
+<button> Orange </button>
+<button> Mango </button>
+
+<script>
+    document.addEventListener('click',event => { 
+        if(event.target.nodeName == 'BUTTON'){
+            console.log("Clicked",event.target.textContent)
+        }
+    })
+</script>

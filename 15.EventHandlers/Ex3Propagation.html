@@ -1,0 +1,11 @@
+<p>A paragraph with a <button>Button</button></p>
+<script>
+    let p = document.querySelector('p')
+    let button = document.querySelector('button')
+
+    p.addEventListener('mousedown',()=>console.log("Paragraph Handler!"))
+    button.addEventListener('mousedown',event =>{
+        console.log('Button Handler!')
+        if(event.button == 2) event.stopPropagation();
+    })
+</script>

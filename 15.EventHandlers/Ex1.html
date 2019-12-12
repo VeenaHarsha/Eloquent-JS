@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Event Handling</title>
+    </head>
+    <body>
+        <button>Click Me!</button>
+        <p>No Handler around</p>
+    <script>
+        let button = document.querySelector("button");
+        function once(){
+            console.log('Button Clicked!!')
+           // button.removeEventListener('click',once)
+        }
+        button.addEventListener('click',once);
+    </script>
+    </body>
+</html>

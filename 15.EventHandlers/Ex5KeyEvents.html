@@ -1,0 +1,23 @@
+<p>THis page turns blue on pressing b key</p>
+<p>Press Control - Space to Continue!</p>
+
+<script>
+    window.addEventListener('keydown',event => {
+        if(event.key == 'b'){
+            document.body.style.background = 'blue'
+            
+        }
+    })
+    window.addEventListener('keyup',event =>{
+        if(event.key == 'b'){
+            document.body.style.background = ''
+        }
+    })
+
+    window.addEventListener('keydown',event => {
+        if(event.key == ' ' && event.ctrlKey){
+            console.log("continuing...")
+        }
+    })
+</script>
+
